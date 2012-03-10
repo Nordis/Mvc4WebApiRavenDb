@@ -74,9 +74,6 @@
     <Reference Include="Raven.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=37f41c7f99471593, processorArchitecture=MSIL">
       <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Abstractions.dll</HintPath>
     </Reference>
-    <Reference Include="Raven.Client.Debug">
-      <HintPath>..\packages\RavenDB.1.0.701\lib\net40\Raven.Client.Debug.dll</HintPath>
-    </Reference>
     <Reference Include="Raven.Client.Embedded">
       <HintPath>..\packages\RavenDB-Embedded.1.0.701\lib\net40\Raven.Client.Embedded.dll</HintPath>
     </Reference>
