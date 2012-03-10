@@ -20,7 +20,7 @@ namespace Mvc4WebApiRavenDb.Api
         {
             using (var session = DataStore.Instance.OpenSession())
             {
-                HttpContext.Current.Response.Headers.Add("Location", "http://www.google.se");
+                HttpContext.Current.Response.Headers.Add("Hello", "World");
                 return session.Query<Task>().ToList();
             }
         }
