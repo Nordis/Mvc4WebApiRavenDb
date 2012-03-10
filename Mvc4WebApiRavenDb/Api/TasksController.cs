@@ -28,7 +28,7 @@ namespace Mvc4WebApiRavenDb.Api
         {
             using (var session = DataStore.Instance.OpenSession())
             {
-                return session.Query<Task>().FirstOrDefault(t => t.Id == id.Replace("/", ""));
+                return session.Query<Task>().FirstOrDefault(t => t.Id == id);
             }
         }
 
