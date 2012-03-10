@@ -25,7 +25,7 @@ namespace Mvc4WebApiRavenDb.Infrastructure
         {
             // Hook up all bindings
 
-            kernel.Bind<IRavenDataStore>().To<RavenHq>();
+            kernel.Bind<IRavenDataStore>().To<RavenDbInMemory>();
         }
 
         #region Implementation of IDependencyResolver
