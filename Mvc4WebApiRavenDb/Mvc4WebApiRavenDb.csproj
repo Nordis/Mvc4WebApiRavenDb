@@ -177,6 +177,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\IRavenDataStore.cs" />
     <Compile Include="Data\RavenDbInMemory.cs" />
+    <Compile Include="Data\RavenHq.cs" />
     <Compile Include="Data\RavenTest.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
