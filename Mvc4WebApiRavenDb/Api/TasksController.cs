@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Web;
 using System.Web.Http;
 using Mvc4WebApiRavenDb.Data;
 using Mvc4WebApiRavenDb.Models;
@@ -19,6 +20,7 @@ namespace Mvc4WebApiRavenDb.Api
         {
             using (var session = DataStore.Instance.OpenSession())
             {
+                HttpContext.Current.Response.Headers.Add("Daniel", "Testar");
                 return session.Query<Task>().ToList();
             }
         }
